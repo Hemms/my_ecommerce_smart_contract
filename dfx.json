@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "my_ecommerce_backend": {
+      "candid": "src/my_ecommerce_backend/my_ecommerce_backend.did",
+      "package": "my_ecommerce_backend",
+      "type": "rust"
+    },
+    "my_ecommerce_frontend": {
+      "dependencies": [
+        "my_ecommerce_backend"
+      ],
+      "source": [
+        "src/my_ecommerce_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my_ecommerce_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
